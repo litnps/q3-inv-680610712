@@ -39,17 +39,18 @@ export function StudentInfo() {
       
       <Card className="relative mx-auto w-80 max-w-sm my-auto">
         <img
+          className="max-h-85"
           src="/Untitled.png"
           alt="img"
         />
         <CardHeader>
           <CardTitle>Lalitnapas Pasasuk</CardTitle>
           <CardDescription>
-            นักศึกษาปี 2 ท่านหนึ่ง
+            นักศึกษาปี 2 คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมคอมพิวเตอร์ท่านหนึ่ง
           </CardDescription>
-          <div className="py-1">
+          <div>
             <div className="my-2">
-          <Badge>Hobby</Badge> นอน, นอน, นอน
+          <Badge>Hobbies</Badge> นอน, นอน, นอน
             </div>
           
           <div className="my-2">
@@ -59,6 +60,7 @@ export function StudentInfo() {
           <div className="my-2">
           <Badge>Social</Badge> instagram.com
           </div>
+          
           </div>
         </CardHeader>
         <CardFooter>
