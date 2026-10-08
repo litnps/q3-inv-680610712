@@ -36,13 +36,35 @@ export function CategoryCards() {
           (acc, item) => acc + item.quantity * item.price,
           0,
         );
-
+        const icon = iconMap[category.value];
         return (
           // Use Card component to display values by category
-          <div>
-            {category.label} - ฿{categoryValue.toFixed(2)} - {categoryUnits}{" "}
-            units
-          </div>
+          // <div>
+          //   {icon}
+          //   {category.label} - ฿{categoryValue.toFixed(2)} - {categoryUnits}{" "}
+          //   units
+          // </div>
+          <Card>
+            <CardHeader>
+              <CardTitle>
+                <div>
+                  {icon}
+                  <p className="text-sm">
+                  {category.label} 
+                  </p>
+                </div>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xl font-bold">
+                ฿{categoryValue.toFixed(2)} 
+              </p>
+              <p className="text-xs text-muted-foreground">
+                {categoryUnits}{" "}units
+              </p>
+            </CardContent>
+          </Card>
+
         );
       })}
     </div>
